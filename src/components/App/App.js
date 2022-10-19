@@ -13,6 +13,10 @@ export class App extends Component {
       { id: 'id-2', name: 'Hermione Kline (test)', number: '443-89-12' }, // test
       { id: 'id-3', name: 'Eden Clements (test)', number: '645-17-79' }, // test
       { id: 'id-4', name: 'Annie Copeland (test)', number: '227-91-26' }, // test
+      { id: 'id-5', name: 'Anna Sim (test)', number: '459-12-56' }, // test
+      { id: 'id-6', name: 'Hermi Kla (test)', number: '443-89-12' }, // test
+      { id: 'id-7', name: 'Eduard Mendi (test)', number: '645-17-79' }, // test
+      { id: 'id-8', name: 'Nataly Iqwel (test)', number: '227-91-26' }, // test
     ],
     filter: '',
   };
@@ -86,7 +90,7 @@ export class App extends Component {
           border="phonebook"
           backgroundColor="phonebookBcg"
           boxShadow="boxShadow"
-          minWidth="400px"
+          minWidth="420px"
         >
           <MaineTitle>Phonebook</MaineTitle>
           <ContactForm onSubmit={this.addContact} />
