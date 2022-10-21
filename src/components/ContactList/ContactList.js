@@ -30,6 +30,8 @@ ContactList.propTypes = {
     })
   ),
   onDelitBtn: PropTypes.func,
+  contactsQnt: PropTypes.number.isRequired,
+  id: PropTypes.string,
 };
 
 export default ContactList;
