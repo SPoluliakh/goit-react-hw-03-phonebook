@@ -29,10 +29,10 @@ export class App extends Component {
     }
   }
 
-  componentDidUpdate(prevState) {
+  componentDidUpdate(_, prevState) {
     const oldContacts = prevState.contacts;
     const newContacts = this.state.contacts;
-    if (oldContacts !== newContacts) {
+    if (oldContacts.length !== newContacts.length) {
       localStorage.setItem(this.LSK_CONTACTS, JSON.stringify(newContacts));
     }
   }
